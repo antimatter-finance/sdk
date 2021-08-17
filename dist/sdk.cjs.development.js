@@ -366,6 +366,11 @@ function Currency(decimals, symbol, name) {
   this.symbol = symbol;
   this.name = name;
 };
+/**
+ * The only instance of the base class `Currency`.
+ */
+
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'ETH', 'ETHER');
 var ETHER = Currency.ETHER;
 
 var _WETH;
