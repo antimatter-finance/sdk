@@ -62,7 +62,7 @@ export const WETH: { [chainId in ChainId]: Token } = {
     [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, '0xc778417E063141139Fce010982780140Aa0cD5Ab', 18, 'WETH', 'Wrapped ETH'),
     [ChainId.BSC]: new Token(ChainId.BSC, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
     [ChainId.FANTOM]: new Token(
-        ChainId.MAINNET,
+        ChainId.FANTOM,
         '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
         18,
         'WFTM',
