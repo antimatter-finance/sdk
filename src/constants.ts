@@ -7,8 +7,8 @@ export enum ChainId {
   MAINNET = 1,
   ROPSTEN = 3,
   BSC = 56,
-  Avalanche = 43114,
-  Arbitrum= 42161
+  AVALANCHE = 43114,
+  ARBITRUM = 42161
 }
 
 export enum TradeType {
@@ -25,17 +25,17 @@ export enum Rounding {
 export const FACTORY_ADDRESS  : {[chainId in ChainId] : string} = {
   [ChainId.MAINNET] : '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
   [ChainId.ROPSTEN] : '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
-  [ChainId.Arbitrum] : '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.ARBITRUM] : '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.BSC] : '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73',
-  [ChainId.Avalanche]: '0xefa94DE7a4656D787667C749f7E1223D71E9FD88'
+  [ChainId.AVALANCHE]: '0xefa94DE7a4656D787667C749f7E1223D71E9FD88'
 }
 
 export const INIT_CODE_HASH : {[chainId in ChainId] : string} = {
   [ChainId.MAINNET] : '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
   [ChainId.ROPSTEN] : '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
-  [ChainId.Arbitrum] : '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303',
+  [ChainId.ARBITRUM] : '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303',
   [ChainId.BSC] : '0x00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5',
-  [ChainId.Avalanche]: '0x40231f6b438bce0797c9ada29b718a87ea0a5cea3fe9a771abdd76bd41a3e545'
+  [ChainId.AVALANCHE]: '0x40231f6b438bce0797c9ada29b718a87ea0a5cea3fe9a771abdd76bd41a3e545'
 }
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
