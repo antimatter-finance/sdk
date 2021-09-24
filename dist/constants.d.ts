@@ -4,8 +4,8 @@ export declare enum ChainId {
     MAINNET = 1,
     ROPSTEN = 3,
     BSC = 56,
-    Avalanche = 43114,
-    Arbitrum = 42161
+    AVALANCHE = 43114,
+    ARBITRUM = 42161
 }
 export declare enum TradeType {
     EXACT_INPUT = 0,
